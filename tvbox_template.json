@@ -1,0 +1,137 @@
+{
+  "spider": "",
+  "wallpaper": "https://api.dujin.org/bing/1920.php",
+  "lives": [
+    {
+      "name": "📺 综合直播",
+      "playerType": 1,
+      "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u"
+    }
+  ],
+  "sites": [
+    {
+      "key": "douban",
+      "name": "💖辉子专属💖",
+      "type": 3,
+      "api": "csp_Douban",
+      "jar": "https://gh.llkk.cc/https://raw.githubusercontent.com/tv-ho/tvbox/main/jar/py_douban.jar",
+      "ext": "https://movie.douban.com",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "huasu",
+      "name": "🌸 飞速资源",
+      "type": 1,
+      "api": "https://www.feisuzyapi.com/api.php/provide/vod/at/xml/",
+      "ext": "",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "yiso",
+      "name": "易搜资源",
+      "type": 1,
+      "api": "https://api.yszyz.com/api.php/provide/vod/at/xml/",
+      "ext": "",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "tianyi",
+      "name": "天意资源",
+      "type": 1,
+      "api": "https://api.tycollect.com/api.php/provide/vod/at/xml/",
+      "ext": "",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "bili",
+      "name": "哔哩哔哩",
+      "type": 3,
+      "api": "csp_Bili",
+      "jar": "https://gh.llkk.cc/https://raw.githubusercontent.com/tv-ho/tvbox/main/jar/py_bilibili.jar",
+      "ext": "https://www.bilibili.com",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "hongguo",
+      "name": "🍎红果短剧",
+      "type": 3,
+      "jar": "./lib/XBPQ.jar",
+      "api": "csp_XBPQ",
+      "ext": {
+        "请求头": "User-Agent$MOBILE_UA",
+        "编码": "UTF-8",
+        "分类": "重生$1#穿越$2#爽剧$3#言情$4#都市$5#古装$6#悬疑$7#剧情$8#",
+        "分类url": "https://www.mochadj.com/i/{cateId}-{catePg}.html"
+      }
+    }
+  ],
+  "parses": [
+    {
+      "name": "自动解析",
+      "type": 2,
+      "url": ""
+    },
+    {
+      "name": "一路解析",
+      "type": 1,
+      "url": "https://api.zsls.xyz/jxapi/?key=zsls&url="
+    },
+    {
+      "name": "非凡解析",
+      "type": 1,
+      "url": "https://feifan.tv.cn/api.php?key=feifan&url="
+    }
+  ],
+  "flags": [
+    "youku","qq","QQ","iqiyi","qiyi","letv","sohu","pptv","PPTV","mgtv","wasu","bilibili"
+  ],
+  "rules": [
+    {
+      "name": "过滤片头",
+      "hosts": ["*"],
+      "regex": ".*#EXTINF.*#EXTVLCOPT.*//Ad.*"
+    }
+  ],
+  "doh": [
+    {
+      "name": "阿里DNS",
+      "url": "https://dns.alidns.com/dns-query",
+      "ips": ["223.5.5.5","223.6.6.6","2400:3200::1","2400:3200:baba::1"]
+    }
+  ],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": {
+        "mediacodec": 0,
+        "opensles": 0,
+        "framedrop": 0,
+        "reconnect": 5
+      }
+    },
+    {
+      "group": "硬解码",
+      "options": {
+        "mediacodec": 1,
+        "opensles": 0,
+        "framedrop": 0,
+        "reconnect": 5
+      }
+    }
+  ],
+  "ads": [
+    "wan.51img1.com",
+    "iqiyi.hbuioo.com",
+    "vip.ffzyad.com"
+  ]
+}
