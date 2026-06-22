@@ -11,8 +11,101 @@
   ],
   "sites": [
     {
+      "key": "drpy_js_douban",
+      "name": "❤豆瓣排行❤",
+      "type": 3,
+      "api": "csp_Douban",
+      "jar": "http://47.120.41.246:8025/vip/jar/tan.php"
+    },
+    {
+      "key": "hpy_js_douban",
+      "name": "豆瓣排行②",
+      "type": 3,
+      "api": "https://gitlab.com/duomv/dzhipy/-/raw/main/drpy_libs/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "https://gitlab.com/duomv/dzhipy/-/raw/main/drpy_js/豆瓣[官].js"
+    },
+    {
+      "key": "peizhi",
+      "name": "❤配置┃中心",
+      "type": 3,
+      "api": "csp_Config",
+      "searchable": 0,
+      "changeable": 0,
+      "indexs": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      }
+    },
+    {
+      "key": "muou",
+      "name": "💖木偶┃4K💖",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": "https://gitee.com/jiandan1232/58/raw/master/pancms/muou.json"
+    },
+    {
+      "key": "erxiao",
+      "name": "💖二小┃4K💖",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": "https://gitee.com/jiandan1232/58/raw/master/pancms/erxiao.json"
+    },
+    {
+      "key": "zhizhen",
+      "name": "💖至臻┃4K💖",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": "https://gitee.com/jiandan1232/58/raw/master/pancms/Test.json"
+    },
+    {
+      "key": "wanou",
+      "name": "💖玩偶┃4K💖",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": "https://gitee.com/jiandan1232/58/raw/master/pancms/wanou.json"
+    },
+    {
+      "key": "jiuling",
+      "name": "❤九灵┃4K",
+      "type": 3,
+      "jar": "https://fastlink.cokey.xyz/f/1LmEH5/yunY.jar",
+      "api": "csp_YDjisu",
+      "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "market",
+      "name": "🛒本地包更新",
+      "type": 3,
+      "api": "csp_Market",
+      "searchable": 0,
+      "changeable": 0,
+      "ext": "http://47.120.41.246:8025/vip/jar/bendi.php"
+    },
+    {
       "key": "dianying",
-      "name": "🔥辉子影视",
+      "name": "🔥电影┃先生",
       "type": 3,
       "api": "csp_XBPQ",
       "jar": "https://gh.llkk.cc/https://raw.githubusercontent.com/EasyXC/EasyTVbox/main/jar/xyqxbpq.jar",
@@ -29,18 +122,33 @@
     },
     {
       "key": "jianpian",
-      "name": "🧲荐片1080P",
+      "name": "🧲荐片┃1080P",
       "type": 3,
       "api": "csp_Jianpian",
       "ext": "https://api.ztcgi.com",
       "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php",
       "quickSearch": 0,
       "searchable": 1,
-      "timeout": 15
+      "timeout": 15,
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      }
     },
     {
-      "key": "miaobovod",
-      "name": "🔥秒播1080P",
+      "key": "jpys",
+      "name": "🥇金牌┃1080P",
+      "type": 3,
+      "api": "csp_Jpys",
+      "ext": "https://y2s52n7.com",
+      "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php",
+      "timeout": 12,
+      "searchable": 1,
+      "quickSearch": 0
+    },
+    {
+      "key": "miaobo",
+      "name": "🔥秒播┃1080P",
       "type": 3,
       "api": "csp_AppRJ",
       "ext": "vxw35/hHSj07Q+maxQzOVMq1rjRCOTXpUCx8iKu5jIg=",
@@ -50,16 +158,97 @@
       "timeout": 12
     },
     {
+      "key": "music",
+      "name": "🎵MUSIC┃听歌",
+      "type": 3,
+      "api": "csp_Music",
+      "ext": "",
+      "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php",
+      "quickSearch": 0,
+      "timeout": 12,
+      "searchable": 0
+    },
+    {
       "key": "nongmin",
-      "name": "🔥农民影视",
+      "name": "🔥农民┃影视",
       "type": 3,
       "api": "csp_Wwys",
       "ext": "https://vip.wwgz.cn:5200",
       "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php"
     },
     {
+      "key": "guazi",
+      "name": "🔥瓜子┃影视",
+      "type": 3,
+      "api": "csp_Gz360",
+      "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php",
+      "timeout": 12,
+      "searchable": 1,
+      "quickSearch": 0
+    },
+    {
+      "key": "maitian",
+      "name": "🔥麦田┃影视",
+      "type": 3,
+      "api": "csp_AppV6",
+      "ext": "http://172.247.227.203:25321/mtys.php",
+      "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php"
+    },
+    {
+      "key": "xinxin",
+      "name": "🔥欣欣┃1080P",
+      "type": 3,
+      "api": "csp_App99",
+      "ext": {
+        "host": "https://api.12321app.com/api",
+        "LoginPath": "/app/log",
+        "version": "0b4328287a5d953e",
+        "appkey": "a0a18659a9977a47e53442cd084b536c",
+        "versionName": "2.8.1",
+        "name": "听心视频",
+        "package": "com.iksp.adsys.jjsp",
+        "buildNumber": "2001",
+        "buildSignature": "03DD38CE4C3D62D0F0DEFACC06768D14EB382C7BD77A05B2EBF4D66E154A0D47"
+      },
+      "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php"
+    },
+    {
+      "key": "da_e",
+      "name": "🔥大鹅┃1080P",
+      "type": 3,
+      "api": "csp_App3Q",
+      "ext": "https://asd123sx23xdacsx.top",
+      "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php",
+      "timeout": 15
+    },
+    {
+      "key": "guwo",
+      "name": "🔥顾我丨APP",
+      "type": 3,
+      "api": "csp_App99",
+      "ext": {
+        "host": "http://117.50.200.113:19987/app/bn",
+        "LoginPath": "/app/log",
+        "appkey": "040f9b1bc5e942569b5c3e63943306ab",
+        "versionName": "4.3.1",
+        "name": "顾我追剧",
+        "package": "com.guwozhuijux.app",
+        "buildNumber": "2001",
+        "buildSignature": "5AD4436C4730FFE26910C86278B80F3E661C317FFC3616F702D20A729262624A"
+      },
+      "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php"
+    },
+    {
+      "key": "xinshoufa",
+      "name": "🔥标清┃1080P",
+      "type": 3,
+      "api": "csp_AppGet",
+      "ext": "https://yun-1316442804.cos.ap-guangzhou.myqcloud.com/601.txt|FTgP4Gq8zPiqbt7M|V122|okhttp/3.10.0",
+      "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php"
+    },
+    {
       "key": "shanying",
-      "name": "🔥闪影秒播",
+      "name": "🔥闪影┃秒播",
       "type": 3,
       "api": "csp_AppYs",
       "ext": "http://38.47.213.61:41271/mogai_api.php/v1.vod",
@@ -75,8 +264,17 @@
       ]
     },
     {
+      "key": "ningmeng",
+      "name": "🔥柠檬┃影视",
+      "type": 3,
+      "api": "csp_Nmvod",
+      "playerType": 2,
+      "jar": "https://ncstatic.clewm.net/rsrc/2025/0915/15/e210975c2c794cbc8bb1839b54ac213e.png;md5;939FFBC2941A28CA533F2653FA4B449E",
+      "ext": "7lj763gg402i7942503g839jg74h8h88highi40799jh6i6k454419l0l5184k0g549h0kg2i01i838i2h42g891lgg1"
+    },
+    {
       "key": "ruyi",
-      "name": "🔥如意采集",
+      "name": "🔥如意┃采集",
       "type": 1,
       "api": "https://cj.rycjapi.com/api.php/provide/vod/",
       "playerType": 1,
@@ -101,17 +299,54 @@
     },
     {
       "key": "bilibili",
-      "name": "📺B站哔哩哔哩",
+      "name": "📺哔哩┃哔哩",
       "type": 3,
       "api": "csp_Bili",
       "jar": "http://47.120.41.246:8025/vip/jar/xiaomi.php",
       "quickSearch": 0,
       "timeout": 12,
       "searchable": 1,
+      "style": {
+        "type": "rect",
+        "ratio": 1.333
+      },
       "ext": {
         "json": "https://cik07-cos.7moor-fs2.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/50e4430df0b5644f/bilibil.json",
         "cookie": ""
       }
+    },
+    {
+      "key": "tuxiaobei",
+      "name": "🐰兔小贝",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "jar": "https://jihulab.com/ymz1231/jar/-/raw/main/ymz.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://jihulab.com/ymz1231/json/-/raw/main/兔小贝.json"
+    },
+    {
+      "key": "tuxiaobei2",
+      "name": "🐰兔小贝2",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "jar": "https://jihulab.com/ymz1231/jar/-/raw/main/ymz.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://jihulab.com/ymz1231/json/-/raw/main/兔小贝2.json"
+    },
+    {
+      "key": "push_agent",
+      "name": "资源加载更新....",
+      "type": 3,
+      "api": "csp_Push",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "ext": ""
     }
   ],
   "parses": [
